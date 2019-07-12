@@ -10,7 +10,7 @@ from timeit import default_timer as timer
 import random
 
 
-def proof_of_work(last_proof, proof):
+def proof_of_work(last_proof):
     """
     Multi-Ouroboros of Work Algorithm
     - Find a number p' such that the last six digits of hash(p) are equal
@@ -24,8 +24,8 @@ def proof_of_work(last_proof, proof):
     print("Searching for next proof")
     proof = 0
     #  TODO: Your code here
-    while self.valid_proof(last_proof, proof) is False:
-            proof += 1
+    while valid_proof(last_proof, proof) is False:
+        proof += 1
 
     print("Proof found: " + str(proof) + " in " + str(timer() - start))
     return proof
@@ -40,7 +40,7 @@ def valid_proof(last_hash, proof):
     """
 
     # TODO: Your code here!
-    guess = f'{last_proof}{proof}'.encode()
+    guess = f'{last_hash}{proof}'.encode()
     guess_hash = hashlib.sha256(guess).hexdigest()
     return guess_hash[:6] == "000000"
 
