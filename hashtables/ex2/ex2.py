@@ -19,5 +19,11 @@ def reconstruct_trip(tickets, length):
     """
     YOUR CODE HERE
     """
+    # to reconstruct we going to need 
+    # length +1
+    # create a loop for route
+    # use the hash_table_insert with destination
+    #  then use has_table_retrive 
+    # return the route
 
     return route
