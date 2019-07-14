@@ -25,8 +25,43 @@ This sprint challenge is divided up into three parts:  Hash tables (24 points), 
 During your challenge, you will be pulled aside by a PM for a 5 minute interview. During this interview, you will be expected to answer the following three questions:
 
   * 1. What is a blockchain and how does it work?
+    Blockchain
+      A blockchain is a growing list of records, called blocks, that are linked using cryptography. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data and its resistant to modification of the data.
+
+    How it works
+      Basically it's a way of passing information from A to B in a fully automated and safe manner. One party to a transaction initiates the process by creating a block. This block is verified by thousands, perhaps millions of computers distributed around the net. The verified block is added to a chain, which is stored across the net, creating not just a unique record, but a unique record with a unique history. Falsifying a single record would mean falsifying the entire chain in millions of instances. Bitcoin uses this model for monetary transactions, but it can be deployed in many other ways.
+
   * 2. What is an array and how does it work?
+    An array 
+      An array is a data structure, which can store a fixed-size collection of elements of the same data type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.
+
+    How it works
+      All arrays consist of contiguous memory locations. The lowest address corresponds to the first element and the highest address to the last element. Once an array has been initialized the elements can have values assigned to them by using the array's index. The index defines the position of each element in the array. The first element is at 0, the second element at 1 and so on. It's important to note that the index of the first element is 0. It's easy to think that because an array has ten elements that the index is from 1 to 10 instead of from 0 to 9.
+
   * 3. What is a hash table and how does it work?
+    Hash table
+        A hash table is a data structure that is used to store keys/value pairs. It uses a hash function to compute an index into an array in which an element will be inserted or searched. By using a good hash function, hashing can work well.Under reasonable assumptions, the average time required to search for an element in a hash table is O(1). 
+
+      How it works
+        Hashing is implemented in two steps:
+        An element is converted into an integer by using a hash function. This element can be used as an index to store the original element, which falls into the hash table.
+        The element is stored in the hash table where it can be quickly retrieved using hashed key.
+
+
+      Hash function
+        A hash function is any function that can be used to map a data set of an arbitrary size to a data set of a fixed size, which falls into the hash table. The values returned by a hash function are called hash values, hash codes, hash sums, or simply hashes.
+        To achieve a good hashing mechanism, It is important to have a good hash function with the following basic requirements:
+        Easy to compute:
+          It should be easy to compute and must not become an algorithm in itself.
+        Uniform distribution: 
+          It should provide a uniform distribution across the hash table and should not result in clustering.
+        Less collisions: 
+          Collisions occur when pairs of elements are mapped to the same hash value. in simple terms a collision or clash is a situation that occurs when two distinct pieces of data have the same hash value. To resolve this we use a method called linear probing
+
+
+
+  
+
 
 You will receive points at the PM's discretion based on the following criteria:
 
